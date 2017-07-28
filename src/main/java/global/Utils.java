@@ -1,4 +1,4 @@
-package Global;
+package global;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

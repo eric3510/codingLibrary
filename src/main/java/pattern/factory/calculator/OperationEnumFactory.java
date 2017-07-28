@@ -1,6 +1,6 @@
 package pattern.factory.calculator;
 
-import Global.Utils;
+import global.Utils;
 
 /***
  *  枚举工厂
