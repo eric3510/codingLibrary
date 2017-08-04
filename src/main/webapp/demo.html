@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        submitPaper();
+        function submitPaper() {
+            $.ajax({
+                url: "http://localhost:8080/examination/submit/papers",
+                type: "POST",
+                data: {
+                    userName:"谭振华",
+                    phone:"18910873561",
+                    papersId:4,
+                    answer:'[{"answers":["2"],"questionid":35,"rightOrWrong":"NO","stem":"跌倒造成的伤害分级，属于1级的（       ）","type":1},{"answers":["1","2"],"questionid":36,"rightOrWrong":"NO","stem":"跌倒可能造成哪些不良后果（     ）","type":1},{"answers":["4","5"],"questionid":37,"rightOrWrong":"NO","stem":"哪些药物可能会引起跌倒（      ）","type":1},{"answers":["5"],"questionid":38,"rightOrWrong":"NO","stem":"哪些是跌倒高危人群（     ）","type":1},{"answers":["2"],"questionid":39,"rightOrWrong":"NO","stem":"跌倒是指突发、不自主的、非故意的体位改变，倒在地上或更低的平面上 。（     ）","type":1},{"answers":["2"],"questionid":40,"rightOrWrong":"NO","stem":"跨步的大小要以助行器的一半为宜，太过向前容易重心不稳而向前跌倒。（     ）","type":1},{"answers":["1"],"questionid":41,"rightOrWrong":"NO","stem":"使用四脚型协步椅的行走方法：先移动协步椅，再健肢，最后患肢。（     ）","type":1},{"answers":["4","5"],"questionid":46,"rightOrWrong":"NO","stem":"对于6个月龄的幼儿纯人工喂养时的注意事项是","type":1},{"answers":["3"],"questionid":45,"rightOrWrong":"NO","stem":"可能的诊断是","type":1},{"answers":["1","4"],"questionid":44,"rightOrWrong":"YES","stem":"留院观察患儿，若再出现手足抽动的处理应采取的治疗是","type":1},{"answers":["4","5"],"questionid":43,"rightOrWrong":"NO","stem":"引起患儿最可能是","type":1}]',
+                    hospitalId:0
+                },
+                success: function(data){
+                    console.log(data)
+                }});
+        }
+    </script>
+</body>
+</html>

@@ -7,6 +7,11 @@ package annotation;
  **/
 public class Main {
     public static void main(String[] args) {
-
+        Model model = new Model();
+        model.setName("13213223");
+        System.out.println(model.hashCode());
+//        model = new Model();
+        model.setValue("321");
+        System.out.println(model.hashCode());
     }
 }
