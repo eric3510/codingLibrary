@@ -1,17 +1,30 @@
-group 'study'
-version '1.0-SNAPSHOT'
+buildscript{
+    ext{
+        springBootVersion = '2.0.0.RELEASE'
+    }
+    repositories{
+        mavenCentral()
+    }
+    dependencies{
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
 
 apply plugin: 'java'
-apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
-repositories {
+repositories{
     mavenCentral()
 }
 
+
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.35'
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
