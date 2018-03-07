@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codingLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/codingLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codingLibrary_main.iml" filepath="$PROJECT_DIR$/.idea/modules/codingLibrary_main.iml" group="codingLibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codingLibrary_main.iml" filepath="$PROJECT_DIR$/.idea/modules/codingLibrary_main.iml" group="codingLibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codingLibrary_test.iml" filepath="$PROJECT_DIR$/.idea/modules/codingLibrary_test.iml" group="codingLibrary" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codingLibrary_test.iml" filepath="$PROJECT_DIR$/.idea/modules/codingLibrary_test.iml" group="codingLibrary" />
     </modules>
   </component>
